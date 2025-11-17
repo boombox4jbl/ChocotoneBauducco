@@ -25,6 +25,7 @@
       height: 350px;
       object-fit: cover;
       background: #eee;
+      cursor: pointer;
     }
 
     .thumbs {
@@ -91,6 +92,9 @@
       border-radius: 10px;
       font-size: 1.2em;
       cursor: pointer;
+      display: block;
+      text-align: center;
+      text-decoration: none;
     }
 
     /* Modal full image */
@@ -126,14 +130,14 @@
 <div class="container">
 
   <!-- Imagem principal -->
-  <img id="main-image" class="image-main" src="/product/bauducco-1.jpg" alt="Chocotone Bauducco">
+  <img id="main-image" class="image-main" src="/images/chocotone1.jpg" alt="Chocotone Bauducco">
 
   <!-- Thumbs estilo TikTok -->
   <div class="thumbs">
-    <img src="/product/bauducco-1.jpg" class="thumb active">
-    <img src="/product/bauducco-2.jpg" class="thumb">
-    <img src="/product/bauducco-3.jpg" class="thumb">
-    <img src="/product/bauducco-4.jpg" class="thumb">
+    <img src="/images/chocotone1.jpg" class="thumb active">
+    <img src="/images/chocotone2.jpg" class="thumb">
+    <img src="/images/chocotone3.jpg" class="thumb">
+    <img src="/images/chocotone4.jpg" class="thumb">
   </div>
 
   <div class="info">
@@ -145,7 +149,10 @@
       <div class="price-old">R$ 34,90</div>
     </div>
 
-    <button class="buy-button">Comprar Agora</button>
+    <!-- BOTÃO COM CHECKOUT -->
+    <a class="buy-button" href="https://app.pushinpay.com.br/#/service/pay/A060B4D0-15B3-49B2-AD24-C20D36F8D5E2" target="_blank">
+      Comprar Agora
+    </a>
   </div>
 
 </div>
